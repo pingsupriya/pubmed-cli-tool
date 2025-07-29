@@ -1,0 +1,4 @@
+streamlit
+biopython
+typer[all]
+pandas
