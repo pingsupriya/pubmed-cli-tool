@@ -1,7 +1,10 @@
-import streamlit as st
-from pubmed_tool.pubmed_api import fetch_pubmed_articles
-from pubmed_tool.filtering import has_non_academic_affiliation
+import sys
+import os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+from pubmed_api import fetch_pubmed_articles
+from filtering import has_non_academic_affiliation
 import pandas as pd
+import streamlit as st
 
 st.title("PubMed Industry Author Finder")
 
